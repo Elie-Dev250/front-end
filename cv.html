@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Iradukunda Elie</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f3f6;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 22px;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+      color: #34495e;
+    }
+
+    p, li {
+      line-height: 1.6;
+      margin-top: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      padding: 10px 20px;
+      margin: 20px auto 0;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    .references {
+      display: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="web.jpg" alt="Iradukunda Elie" class="profile-img">
+      <h1>Iradukunda Elie</h1>
+      <p><strong>Email:</strong> iradukundaelie71@gmail.com | <strong>Phone:</strong> 0793498102</p>
+      <p><strong>Address:</strong> Kirehe, Eastern Province | <strong>LinkedIn:</strong> iradukundaelie71@gmail.com</p>
+    </div>
+
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Currently studying Information Technology at university, with strong foundational computer and networking skills. Passionate about IT and eager to contribute to the tech community through innovation and continuous learning.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Computer (IT) Skills</li>
+        <li>Computer Networking</li>
+        <li>Software Development</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>Degree:</strong> Advanced Diploma in Information Technology</p>
+      <p><strong>Institution:</strong> Tumba College of Technology</p>
+      <p><strong>Expected Graduation:</strong> 2028 (Currently in Year 1)</p>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <p><strong>Digital Ambassador</strong> at Rwanda Information Society Authority (RISA)</p>
+      <p><strong>Duration:</strong> June 5, 2024 - August 3, 2024</p>
+      <ul>
+        <li>Assisted in IT-related tasks and digital support</li>
+        <li>Supported the team in implementing digital solutions</li>
+        <li>Gained hands-on experience in IT operations</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>Kinyarwanda (Fluent)</li>
+        <li>English (Fluent)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>References</h2>
+      <button class="button" onclick="toggleReferences()">Toggle References</button>
+      <div class="references" id="references">
+        <ul>
+          <li><strong>Name:</strong> Ishimwe Samuel | <strong>Role:</strong> Student | <strong>Phone:</strong> 0791318873</li>
+          <li><strong>Name:</strong> Hakuzweyezu Brigitte | <strong>Role:</strong> Veterinary | <strong>Phone:</strong> 0798843881</li>
+          <li><strong>Name:</strong> Kazayire Cansilde | <strong>Role:</strong> Farmer | <strong>Phone:</strong> 0786690541</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>I confirm that the information provided is true and accurate.</p>
+      <p><strong>Signed:</strong> Iradukunda Elie</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleReferences() {
+      const ref = document.getElementById("references");
+      ref.style.display = (ref.style.display === "none" || ref.style.display === '') ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
