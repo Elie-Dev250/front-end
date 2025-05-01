@@ -1,0 +1,28 @@
+<script>
+    const form = document.getElementById('loginForm');
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      const username = document.getElementById('username');
+      const password = document.getElementById('password');
+  
+      const res = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: username.value,
+          password: password.value
+        })
+      });
+  
+      const result = await res.text();
+      alert(result);
+  
+      if (res.ok) {
+        localStorage.setItem('user', username.value);
+        window.location.href = 'dashboard.html';
+      }
+    });
+  </script>
+  
